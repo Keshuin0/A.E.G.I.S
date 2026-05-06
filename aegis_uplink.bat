@@ -22,7 +22,7 @@ git push origin dev
 
 echo.
 echo    [/// UPLINK COMPLETE. VAULT SECURED. ///]
-echo    [/// SLEEPING FOR 5 MINUTES... ///]
+echo    [/// SLEEPING FOR 15 Seconds... ///]
 echo.
 timeout /t 15 /nobreak
 goto SYNC_LOOP
