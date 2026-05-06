@@ -1,0 +1,30 @@
+# ==========================================
+# AEGIS SOVEREIGN SHIELD (IGNORE PROTOCOL)
+# ==========================================
+
+# Substrate / Rust Compilation
+target/
+**/*.rs.bk
+
+# Node & Frontend
+node_modules/
+dist/
+build/
+.next/
+
+# Python & AI Worker
+__pycache__/
+*.py[cod]
+*$py.class
+*.pth
+aegis_cortex_memory.pth
+
+# Secrets & Keys (CRITICAL: NEVER PUSH THESE)
+.env
+*.pem
+*.key
+secret_vault.json
+
+# OS Junk
+.DS_Store
+Thumbs.db

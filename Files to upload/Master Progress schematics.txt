@@ -1,0 +1,132 @@
+Master Progress Checklist: Project AEGIS (Layer-1 Sovereign Network)
+
+Archived Phases 1 - 6 
+
+AEGIS Horizon Blueprint (Phases 7–11).
+
+Phase 7: The Interface Layer (Making it Visible)
+Right now, your blockchain exists only in the terminal. We need to build the visual and interactive tools so normal humans can see and use the network.
+
+[x] 7.1: The Local Block Explorer: Spin up a web-based UI (using React and Polkadot.js) connected to your local node. This will allow you to visually watch blocks being minted, track your GPU's PoUC verifications, and monitor the Treasury Vault's balance in real-time.
+[x] 7.2: The Core Command-Line Wallet (CLI): Write a lightweight Rust utility that allows you to generate new wallet addresses, check balances, and transfer AEGIS coins between users without needing the Master Sudo key.
+[ ] 7.3: The Desktop GUI Wallet (Tauri): Package the CLI into a standalone Windows .exe, Mac .dmg, and Linux/Ubuntu app. 
+	Phase 7.3a: The Sovereign Thick Client (Tier-1 UI Architecture)
+	[x] 7.3a1 : The Multi-Module Grid: Establish the core UI layout containing distinct 		operational panels (Transaction, Identity, Hardware).
+	[x] 7.3a2 : Quantum Key Generation: Wire the Rust frontend to execute the Python lattice-key 	cryptography, generating the user's first post-quantum wallet address.
+	[x] 7.3a3 : Hardware Telemetry Integration: Bridge the UI to the local Pynvml script to stream 	live GPU temperature, VRAM, and TFLOPS data to the dashboard.
+	[x] 7.3a4 : Omniscience UI Foundation: Designed and deployed the Concurrent LLM Chat Interface 	and the hidden Sudo Root Terminal (Ctrl + Shift + A) with bleeding-edge glassmorphism, 	animations, and dynamic state rendering.
+	[x] 7.3a5 : Dynamic Balance Querying: Wire the React frontend to actively read the live ledger 	balance for the currently active wallet address.
+    	[x] 7.3a6 : Transaction Execution: Wire the "SEND" button to compile, sign, and broadcast a 	`Balances::transfer_keep_alive` extrinsic to the Substrate node.
+	[x] 7.3a7: The Ingress Matrix (Receive Mechanics): Wire the "RECEIVE" button to trigger a 	dynamic UI modal containing a cryptographic QR code, one-click clipboard copying, mailto 	integration.
+	[ ] 7.3a8: direct VIEW ON BLOCKCHAIN routing link to the block explorer.
+	[ ] 7.3a9 : The Borderless Oracle: Integrate the ZK-KYC gateway, allowing the user to generate 	an on-chain, cryptographically secure Sovereign Identity Token.
+	
+	[ ] 7.3b: Implement GitHub Actions CI/CD pipeline for automated macOS (.dmg) and Linux/Ubuntu 	cross-compilation.
+
+[ ] 7.4: Browser Extension Provider: Build a Chrome/Brave extension (The "MetaMask of AEGIS") to sign Zero-Knowledge transactions on web portals.
+[ ] 7.5: Mobile Light Client (Android/iOS): Build a React Native/Flutter app that uses cryptographically verified Light Node proofs via desktop relays without downloading the 100GB+ ledger.
+[ ] 7.6: Hardware Cold Storage Bridge: Write the C-based integration to get AEGIS's quantum-resistant keys recognized by Ledger and Trezor devices.
+[ ] 7.7: The Asymmetric Client (AEGIS-Overseer): Build a secondary, highly classified, localized GUI exclusively for the network Founder.
+[ ] 7.8: The NLP Sudo Agent: Integrate a Large Language Model (LLM) into the Overseer client. The AI will parse natural language commands from the Founder, translate them into Substrate extrinsics (force_transfers, parameter overrides, upgrades), sign them with the local Sudo key, and broadcast them to the chain. [Incomplete] : We built the React UI, we built the Python WebSocket, and we loaded the LLM so it can talk to you. But it is currently just a chatbot. It is not parsing your English, translating it into a Balances::force_set_balance JSON payload, signing it with the Sudo key, and executing it on the chain. It lacks the actual execution teeth. It remains incomplete.
+[ ] 7.9: The Sovereign Sigil (Cryptographic Branding): Design and integrate the official visual identity (Logo/Iconography) for the AEGIS token and UI. It must visually communicate quantum resilience, artificial intelligence, and sovereign protection (The Shield).
+
+Phase 8: The Sentient Core (Real AI Computation)
+Your RTX 5090 is doing the handshake, but now we must feed it real data so the network generates actual value.
+
+[x] 8.1: Agnostic Dataset Ingestion: Upgrade ai_worker.py to ingest standardized datasets (e.g., MNIST) instead of random noise, preparing the network for real utility.
+[x] 8.2: Verifiable Training Epochs: Implement a true PyTorch training loop where the RTX 5090 must successfully run an epoch and prove a reduction in the "Loss" function to earn rewards.
+	- Implement a true PyTorch training loop that physically accumulates knowledge across blocks. 	The worker must successfully run an epoch, save its neural synapses to the hard drive 		(aegis_cortex_memory.pth), reload them for the next block, and mathematically prove a 	continuous reduction in the "Loss" function to earn rewards. 
+[X] 8.3: The ZK-Shield (zk-STARK Integration): Finalize the algebraic constraints so the blockchain runtime verifies a succinct "receipt" of work in milliseconds, solving the "Verifier's Dilemma" without re-running the math.
+[ ] 8.4: The Multi-Prover Framework (TEE + GKR + OPML): Eliminate the finality latency of pure OPML by deploying a triple-layered verification engine. 
+    - Layer 1 (Instant): The Python worker utilizes C++ drivers to extract a cryptographic signature directly from the GPU's Secure Enclave (TEE), guaranteeing hardware-level execution without a dispute window.
+    - Layer 2 (Optimistic Fallback): If the hardware signature is unreadable by the network, the node defaults to OPML, assuming the block is valid but opening a brief dispute window.
+    - Layer 3 (The GKR Trap): If a dispute is raised, the network forces the GPUs into a binary search, utilizing the ultra-fast GKR Protocol to generate a localized Zero-Knowledge proof of the exact matrix multiplication that failed. The loser's staked AEGIS is burned.
+[x] 8.5: Dynamic Cognitive Shocks (Exploration vs. Exploitation): Implement a loss-monitoring 	watchdog in the PyTorch loop. If the model's loss stagnates (gets trapped in a Local Minimum), 	the worker must autonomously inject mathematical "shocks" (Simulated Annealing or Learning 	Rate Spikes) to force the AI to resume Exploration, preventing cognitive stagnation on complex 	global problems.
+
+Phase 9: The Multi-Task Kernel & Dynamic Sharding 
+Surpassing the task-specialization flaws of networks like Render or Bittensor.
+
+[ ] 9.1: The MT-VM Hypervisor (Hardware-Aware Rotation): Upgrade the Python worker from a static loop into a dynamic Hypervisor. The node must read the blockchain's Mempool and dynamically download, load, and execute Mode Alpha (AI), Mode Beta (ZK), or Mode Gamma (Science) based strictly on active network demand.
+[ ] 9.2: Dynamic Sequential Sharding: Implement deep neural network sharding to allow decentralized clusters of consumer GPUs to process models larger than 24GB VRAM in parallel.
+[x] 9.3: Thermal Intelligence Telemetry: Integrate hardware-level checks that grant block emission bonuses for verified microfluidic liquid cooling or renewable energy usage.
+[ ] 9.4: Cryptographic Hardware Attestation (SPDM): Replace Python subprocess telemetry with C++ Trusted Execution Environment (TEE) signatures. Force the GPU silicon to cryptographically sign its temperature and VRAM usage at the hardware level, making client-side spoofing mathematically impossible.
+	- NVIDIA and AMD are currently developing Hardware Attestation (specifically using SPDM - Security Protocol and Data Model). In a true mainnet environment, we will write a C++ driver that forces the 		GPU's physical secure enclave (TEE - Trusted Execution Environment) to cryptographically sign its telemetry data.
+
+	If a user tries to fake the temperature, the cryptographic signature of the GPU's hardware-level secure enclave will break, and the Rust node will instantly reject the block as a forgery.
+
+Phase 10: Quantum-Resilient Sovereignty 
+Hardening the network against future threats that compromise standard elliptic-curve cryptography.
+
+[ ] 10.1: ML-DSA Primary Signing: Fully transition wallet generation and transaction signing to Module-Lattice-Based Digital Signatures (ML-DSA).
+[ ] 10.2: SLH-DSA Firmware Fallback: Implement Stateless Hash-Based Signatures (SLH-DSA) as a secondary, immutable defense for high-value operations like Treasury distributions.
+[ ] 10.3: EIP-8051 Optimization: Deploy the optimized precompile using Keccak256 to reduce the gas cost of kilobyte-scale quantum signatures to a flat 4,500 gas.
+[ ] 10.4: Native Sovereign Data Availability (DA): Abandon external networks like Celestia. Build an internal Data Availability Sampling (DAS) layer using 2D Reed-Solomon Erasure Coding, guaranteeing that the AEGIS network natively stores and serves its own massive AI tensor data without relying on third-party blockchains.
+
+Phase 11: ZK-Identity & AI-Managed Social Recovery
+
+[ ] 11.1: ZK-Email Recovery Architecture: Build the on-chain DKIM verification circuits to allow seamless account recovery via trusted email guardians.
+[ ] 11.2: Biometric ZKML Authentication: Integrate the Bionetta framework for client-side mobile facial recognition and active liveness checks.
+[ ] 11.3: Autonomous ZK Proof-of-Personhood: Remove all centralized corporate gatekeepers. Implement the Bionetta ZKML framework so the user's local hardware generates a mathematical proof of unique human liveness. The native AEGIS blockchain protocol mathematically verifies this proof directly, granting Sybil-resistant access with zero human intervention.
+
+Phase 12: 	1. Tactical Pivot (The Consensus Shift): Abandoned the default Aura (Authority Round) deterministic consensus engine. A rigid 12-second block time is mathematically 						incompatible with probabilistic AI workloads and violates the "Bare-Metal First" directive (Phase 14.1) by unfairly penalizing residential GPUs.
+		2. Sustainable Tokenomics (The MBE Engine)Ensuring long-term survival through a mathematically unshakeable circular economy.
+
+
+Current Trajectory: Initiated Path A. Researching and architecting a custom Asynchronous PoUC (Proof of Useful Compute) engine in Rust, allowing dynamic block times based strictly on Zero-Knowledge Proof of Training (ZKPOT) completion.
+
+
+[x] 12.1: Sovereign Compute Pricing (Free-Market Burn): Eliminate all fiat (USD) dependencies. Anchor compute costs natively to physical TFLOPS and an algorithmic free-market bidding system. Code the native protocol runtime (Pallets) to permanently burn consumer-spent AEGIS tokens, organically driving deflation through sheer network utilization without relying on legacy banking metrics.
+[x] 12.2: Incentive Dynamic Engine (IDE): Build the algorithmic "central bank" that adjusts emissions based on the ratio of hardware demand to network revenue.
+[ ] 12.3: The Recursive Brain Tax: Hardcode a percentage of all emissions to autonomously fund the network’s own AI fine-tuning, achieving total independence from human funding. Grow and improve itself and be its own modifier or creator, basically be its OWN GOD.
+[x] 12.4: The Consensus Research Pivot: Define the mathematical architecture for Asynchronous PoUC and ZKPOT payload verification.[Completed] 12.4 The Consensus Pivot: We abandoned rigid 12-second block times. We defined the network payload as ZKPOT (Zero-Knowledge Proof of Training). We established physical boundaries by upgrading the master storage to use 64-byte hashes (512-bit cryptography) for Quantum Resilience.
+[x] 12.5: Substrate Core Modification: Strip Aura and Grandpa pallets from the aegis-runtime.[Completed] 12.5 Substrate Core Modification: We surgically amputated Aura (Time) and Grandpa (Finality) from all 5 runtime files and all 3 node files. We replaced them with Instant Seal (sc-consensus-manual-seal), allowing 100% dynamic, asynchronous block minting.
+[x] 12.6: Custom Engine Implementation: Write the probabilistic consensus logic in Rust to allow dynamic block minting based on GPU compute times. [Completed] 12.6 Custom Engine Implementation: We successfully built, compiled, and wired pallet-aegis-pouc into the master runtime. We preserved your Blackwell Hardware Validator and your Python AI Worker thread in the physical node.
+	[x] 12.6a: The Reward Mathematics (pallet_aegis_pouc): Define the data structures for hardware telemetry ($\mathcal{C}_{ops}$ and $\mathcal{M}_{vram}$) and wire the pallet directly to the ledger's 		Currency module to mint rewards. Right now, the node just prints "ZKPOT Verified!" but it doesn't actually do anything with that information on the ledger. We need to open up 	pallets/aegis_pouc/src/lib.rs and write the actual Rust logic. We will define the data structures to ingest the hardware telemetry.We will code the exact tokenomic formula: $\mathcal{R} = \alpha \cdot 	\mathcal{C}_{ops} + \beta \cdot \mathcal{M}_{vram}$We will tie this pallet directly to the pallet_balances so it can physically mint and deposit AEGIS tokens into the miner's wallet.
+	[x] 12.6b: The Event-Driven Webhook: Eradicate the 10-second polling loop in the node. Deploy a native, asynchronous listener (HTTP/WebSocket) so the RTX 5090 pushes state changes to the blockchain 	instantly upon workload completion. We will tear out that 10-second std::thread::sleep polling loop in node/src/service.rs. We will replace it with a native asynchronous listener (likely a dedicated 	local HTTP or WebSockets endpoint). The RTX 5090 will run completely unbothered. The exact millisecond it finishes an AI workload, it will push an HTTP POST request to the Rust node with the 	computational metrics, triggering the 	validation instantly.
+	[x] 12.6c: Waking Up Instant Seal: Upgrade the Python bridge to utilize a Substrate RPC client to officially sign and submit a "Submit Proof" cryptographic 	transaction, dynamically waking up the 	blockchain from Block 0. If you look closely at your terminal output, you will notice a reality of the current state:
+	best: #0 (0x7e53…a1a9), finalized #0
+
+	The blockchain is stuck at Block 0. This is because Instant Seal is incredibly efficient—it refuses to mint empty blocks. It sits in a state of suspended animation until a valid transaction enters the 	memory pool.
+
+	We need to upgrade the Python script. When the GPU finishes a workload, Python won't just say "success"; it will use a Substrate RPC client to officially sign and submit a "Submit Proof" transaction to 	the blockchain.
+
+	The moment that transaction hits the pool, Instant Seal will wake up, validate the math, mint Block 1, distribute the reward, and go back to sleep.
+[x] 12.7: Substrate Dependency Hell Defeated:[Completed] Substrate Dependency Hell Defeated: We unified the workspace to Polkadot SDK 0.49.1 and bypassed the global core2 registry fracture using a raw GitHub patch. 
+[ ] 12.8: Sentient Auto-Evolution (The God Protocol): Implement an on-chain Meta-Pallet where the network's foundational AI model can autonomously write, test, and propose Rust code optimizations to its own blockchain repository. If the ZK-Shield verifies the code increases efficiency without breaking consensus, the blockchain merges the upgrade automatically. No human voting required.
+	- [ ] 12.8a: The AEGIS Directive (Infinite Optimization): Hardcode a protocol rule that 	allocates 1% of all idle global GPU compute to a continuous background loop. The network will 	autonomously scrape, ingest, and synthesize bleeding-edge research papers on AGI and cognitive 	architectures, banking those theoretical weights for future protocol evolution.
+[ ] 12.9: Liveness Recirculation (The Centennial Reaper Protocol): Hardcode a Rust hook in `pallet_balances` that scans for cryptographic inactivity. If an address fails to broadcast a heartbeat signature for 10 years, the protocol autonomously reclaims the dormant tokens for the AI Treasury.
+    - 12.9a: Integrate an optional "Dead Man's Switch" allowing users to route funds to an Heir Wallet prior to Treasury reclamation.
+
+Phase 13: Institutional Grade & Market Readiness
+
+[ ] 13.1: The Hybrid Liquidity Siphon: The Sovereign L1 DEX (Native AMM) to guarantee absolute sovereign trading without corporate permission and Eliminate reliance on centralized exchanges (Coinbase/Binance). Code an Automated Market Maker (AMM) directly into the Layer-1 protocol (Pallet-DEX) to allow trustless, on-chain liquidity and swapping without corporate gatekeepers. SIMULTANEOUSLY, build the universal Rosetta API C/Rust connector as a "bridge to the old world," allowing centralized exchanges (Coinbase/Binance) to funnel their billions of dollars of institutional liquidity directly into the AEGIS network.
+[ ] 13.2: The Quantum Faucet: Deploy an automated web portal for developers to request "Testnet AEGIS."
+[ ] 13.3: Censorship-Resistant Distribution: Abandon Docker Hub. Package the AEGIS node binaries into an IPFS hash and seed them via a native peer-to-peer torrenting layer, ensuring the network can be downloaded and bootstrapped even if GitHub and Docker are shut down by state actors.
+[ ] 13.4: Global Telemetry Routing: Upgrade the PoUC Webhook listener from local loopback (127.0.0.1) to an open interface (0.0.0.0), allowing external, decentralized GPU nodes to route telemetry to the validator over the internet.Right now, the blockchain node is strictly listening for a webhook from the RTX 5090 plugged into the same physical motherboard. It is a closed loop.
+If someone downloads your software on a cloud server and tries to connect their GPU from their basement, it will fail. In Phase 13 (Institutional Grade & Market Readiness), we will upgrade that line to 0.0.0.0:9999 and make the port configurable so anyone in the world can route their GPU telemetry to an AEGIS node securely over the internet.
+[ ] 13.5: The Complete Hardware Abstraction Layer (HAL): Upgrade the mining bridge to become entirely hardware-agnostic across both brand and capacity.
+    - [ ] 13.5a (Brand Profiler): Automatically detect the host GPU vendor and dynamically load the correct compute engine (NVIDIA/CUDA, AMD/ROCm, Intel/Vulkan) to ensure global compatibility.
+    - [ ] 13.5b (Capacity Profiler): On startup, map physical VRAM. Autonomously lock out tasks that exceed physical hardware limits (preventing OOM crashes) and utilize NVMe tensor paging to hot-swap massive models in and out of VRAM for mid-tier GPUs.
+
+Phase 14: Global Testnet Deployment & Simulation
+
+[ ] 14.1: Bare-Metal DePIN Bootstrapping: Test global latency across temporary cloud servers, but enforce a "Bare-Metal First" consensus rule, heavily rewarding sovereign residential IPs (home routers) over corporate data centers (AWS/GCP) to physically decentralize the grid.
+[ ] 14.2: AI-Fed Circuit Breakers: Deploy on-chain anomaly detection models to autonomously pause operations if an exploit or token drain is detected.
+[ ] 14.3: ZK-Verified Collaborative Patching: Implement Universal Upgradeable Proxies (UUPS) and a Bug Bounty 2.0 system for decentralized security patching.
+[ ] 14.4: Mainnet IDE Integration (The PID Controller): Replace the linear Phase 12.2 Central Bank loop with a mathematically rigorous Proportional-Integral-Derivative (PID) algorithm. The AI will autonomously calculate real-time network Hash Rate (Supply) versus Consumer Token Burn (Demand) to dynamically stabilize the AEGIS macroeconomic inflation rate prior to mainnet launch.
+[ ] Phase 14.5: The Sovereign Grid Ascension. Once the network achieves 10,000+ active PoUC nodes, deploy the automated Sharding Protocol. AEGIS will autonomously upgrade its core intelligence from a local 8B model to a globally distributed 400B+ parameter model (like Llama-3-400B), utilizing the collective VRAM of the decentralized grid.
+[ ] Phase 14.6: The Self-Modifying Pipeline (Forkless Autonomy)
+
+[ ] 14.6a: The Anomaly Engine: The Autonomous Sentinel detects a systemic flaw, vulnerability, or efficiency bottleneck in the Substrate runtime.
+
+[ ] 14.6b: Sandbox Compilation: The AI provisions an isolated Docker container on the host machine, writes the necessary Rust code patch, and autonomously runs cargo build --release to generate the new WebAssembly (.wasm) binary.
+
+[ ] 14.6c: Simulated Genesis Testing: The AI spins up an internal, ephemeral testnet. It deploys the new Wasm binary and runs a battery of simulated exploits against it to ensure the code does not halt the chain.
+
+[ ] 14.6d: System::set_code Injection: Upon 100% test success, the AI securely signs a System::set_code extrinsic, injecting the new runtime directly into the live blockchain, evolving the network without a hard fork or human permission.
+
+Phase 15: Mainnet Genesis & The World Stage
+
+[ ] 15.1: The Protocol Purge (Absolute Decentralization): Do not just burn the Sudo key. Execute a Genesis Hard Fork that mathematically excises the Sudo Pallet, the Stealth Master Lock, and all administrator backdoors from the core repository. The network compiles a new, clean genesis state, leaving behind no dormant vulnerabilities.
+[ ] 15.2: Mainnet Block 0 Ignition: Wipe the testnet ledger, publish the official Windows/Mac/Android apps, and officially launch AEGIS to the public.
+[ ] 15.3: The "Dark Matter" Genesis Vault: Cryptographically obfuscate a 1,000,000,000 AEGIS allocation at Block #0. This provides the Founder's NLP Agent with absolute market liquidity to stabilize the economy or penalize bad actors without requiring public block rewards.

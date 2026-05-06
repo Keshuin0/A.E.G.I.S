@@ -1,0 +1,6 @@
+{
+    "address": "AEGIS_Q_3f27d7e31f5ab5b550ba69c6",
+    "public_key_lattice": "5da4a6a56c3d2285cd4b0c9eec8bc64ae3e438a24783d0e9f2c1aa42ef08ef9f90796c835e1119748cbf0303eeeec9ed42bb77a7af9719858673e2432d4058f3169a4042b30cf5a4aaae85912d7c9f947bcec2fe0ee07ee2034a5a0707428dec234a87b89a05fb441d929be70c4ebe1b7c0cefb0e39c419c585826191600c97d",
+    "private_seed_hex": "d46614578f8079020a22bfa8cb0a5f6558fd3d09e69da163351c59bbcd91df8a",
+    "security_level": "NIST Post-Quantum Category 5 (Simulated Payload)"
+}
